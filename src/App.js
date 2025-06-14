@@ -1,5 +1,8 @@
 import React from "react";
+import Contador from "./components/Contador/Contador";
 
-export default function App() {
-  return <div>App</div>;
-}
+const App = () => {
+  return <Contador></Contador>;
+};
+
+export default App;
