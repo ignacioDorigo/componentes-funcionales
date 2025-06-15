@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "./LoginForm2.css";
 
 export default function LoginForm2() {
-  const [formulario, setFormulario] = useState({ email: "", password: "" });
+  const [formulario, setFormulario] = useState({
+    email: "",
+    password: "",
+    genero: "",
+  });
 
   const enviarFormulario = (e) => {
     e.preventDefault();
@@ -46,6 +50,22 @@ export default function LoginForm2() {
             value={formulario.password}
             onChange={(e) => manejarCambioInput(e)}
           ></input>
+        </div>
+
+        <div className="form__campo">
+          <select
+            className="form__input"
+            value={formulario.genero}
+            name="genero"
+            onChange={(e) => manejarCambioInput(e)}
+          >
+            <option value={""} disabled>
+              Genero
+            </option>
+            <option value={"Masculino"}>Masculino</option>
+            <option value={"Femenino"}>Femenino</option>
+            <option value={"Otro"}>Otro</option>
+          </select>
         </div>
       </div>
 
