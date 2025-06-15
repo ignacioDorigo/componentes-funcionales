@@ -1,16 +1,23 @@
-body{
+body {
     background-color: rgb(238, 238, 238);
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 40rem;
-    margin: 20rem auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.formulario {
+    position: relative;
+    inset: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    width: 20rem;
     padding: 1rem;
     border-radius: 5px;
     background-color: #fff;
+    margin: auto auto;
 }
 
 .form__titulo {
@@ -35,7 +42,7 @@ body{
     outline: none;
 }
 
-.form__input:focus{
+.form__input:focus {
     border: 1px solid #486ae6;
 }
 
