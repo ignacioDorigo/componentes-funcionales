@@ -4,13 +4,13 @@ import React from "react";
 // import ContadorCustomHook from "./components/ContadorCustomHook/ContadorCustomHook";
 // import Usuarios from "./components/Usuarios/Usuarios";
 // import ContadorUseEffect from "./components/ContadorUseEffect/ContadorUseEffect";
-import LoginForm from "./components/LoginForm/LoginForm";
+// import LoginForm from "./components/LoginForm/LoginForm";
+import LoginForm2 from "./components/LoginForm2/LoginForm2";
 
 const App = () => {
-  // return <Contador></Contador>;
   return (
     <>
-      <LoginForm />
+      <LoginForm2 />
     </>
   );
 };
