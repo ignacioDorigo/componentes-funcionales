@@ -17,13 +17,17 @@ El proyecto está organizado de forma modular para facilitar la lectura, el mant
 
 ## 🪝 Hooks Utilizados
 
-Se aplican los hooks principales de React para gestionar el ciclo de vida y el estado de la aplicación:
+Se aplican los hooks principales de React para gestionar el ciclo de vida, el estado y el acceso al DOM:
 
 | Hook | Propósito |
 | :--- | :--- |
 | `useState` | Manejo de estado local de forma sencilla. |
-| `useEffect` | Gestión de efectos secundarios y sincronización con APIs o el DOM. |
+| `useEffect` | Gestión de efectos secundarios y sincronización. |
+| `useContext` | Paso de datos a través del árbol de componentes sin *prop drilling*. |
 | `useReducer` | Control de estado complejo y lógica de transiciones predecible. |
+| `useRef` | Persistencia de valores entre renders y acceso directo a elementos del DOM. |
+
+
 
 ---
 
