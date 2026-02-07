@@ -7,33 +7,40 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-  padding: 2rem 3rem;
+
+  padding: 1.5rem;
   border-radius: 12px;
 
-  max-width: 320px;
-  margin: 2rem auto;
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-  transition: all 0.3s ease;
+  width: 90%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contadorUseState:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+@media (hover: hover) {
+  .contador:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+  }
 }
 
-.contadorUseState h1 {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+.contador h1 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   color: #333;
+  text-align: center;
 }
 
 .contador__botones {
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .contador__botones button {
-  padding: 0.6rem 1.2rem;
+  flex: 1;
+  padding: 0.8rem;
   font-size: 1rem;
   font-weight: 600;
 
@@ -47,19 +54,16 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.contador__botones button:hover {
-  background-color: #4338ca;
-  transform: scale(1.05);
-}
-
 .contador__botones button:active {
-  transform: scale(0.95);
+  transform: scale(0.96);
 }
 
 .contador__botones button:last-child {
   background-color: #ef4444;
 }
 
-.contador__botones button:last-child:hover {
-  background-color: #dc2626;
+@media (max-width: 360px) {
+  .contador__botones {
+    flex-direction: column;
+  }
 }

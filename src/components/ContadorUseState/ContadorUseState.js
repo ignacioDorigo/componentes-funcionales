@@ -14,7 +14,7 @@ export default function ContadorUseState() {
   };
 
   return (
-    <div className="contadorUseState">
+    <div className="contador">
       <h1>Contador: {contador}</h1>
 
       <div className="contador__botones">
