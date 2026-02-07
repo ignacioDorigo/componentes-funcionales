@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 📦 Repositorio de Componentes Funcionales en React ⚛️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio reúne ejemplos y prácticas sobre el uso de **componentes funcionales** en React, con foco en una estructura clara, el manejo de estado mediante hooks nativos y la reutilización de lógica a través de custom hooks.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧱 Estructura del Proyecto
 
-### `npm start`
+El proyecto está organizado de forma modular para facilitar la lectura, el mantenimiento y la escalabilidad, siguiendo los principios de:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Componentes desacoplados:** Piezas de interfaz independientes y reutilizables.
+* **Separación de conceptos:** Clara distinción entre la lógica de negocio y la presentación (UI).
+* **Organización Semántica:** Carpetas dedicadas a hooks y custom hooks.
+* **Convenciones React:** Uso de estándares modernos de la comunidad.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🪝 Hooks Utilizados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se aplican los hooks principales de React para gestionar el ciclo de vida y el estado de la aplicación:
 
-### `npm run build`
+| Hook | Propósito |
+| :--- | :--- |
+| `useState` | Manejo de estado local de forma sencilla. |
+| `useEffect` | Gestión de efectos secundarios y sincronización con APIs o el DOM. |
+| `useReducer` | Control de estado complejo y lógica de transiciones predecible. |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔁 Custom Hooks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El repositorio pone especial énfasis en la abstracción de lógica para evitar la duplicación de código mediante **Custom Hooks**.
 
-### `npm run eject`
+**Ejemplos incluidos:**
+* 👤 **Manejo de estado compartido:** Lógica centralizada para múltiples componentes.
+* 📝 **Lógica de formularios:** Abstracción de inputs y validaciones.
+* 🔢 **Contadores y efectos:** Implementaciones de lógica matemática y temporizadores reutilizables.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎯 Objetivo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+El objetivo principal de este espacio es practicar y demostrar **buenas prácticas en React**, profundizando en el *cuándo* y el *por qué* de cada herramienta, para construir aplicaciones basadas en componentes funcionales sólidos y escalables.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
